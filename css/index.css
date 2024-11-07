@@ -1,0 +1,106 @@
+.push-zone {
+    background: url("../images/OrlandoBloom-welcomepage.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    position: relative;
+    color: white;
+    font-family: "Redwing";
+}
+
+.push-zone_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overcome-limitation {
+    background-image: url("../images/Girl-in-the-rain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    min-height: 80vh;
+    padding-top: 10px;
+    position: relative; 
+    color: white;
+    text-align: center;
+    font-family: "Redwing";
+}
+
+.overcome-limitation_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.new-in {
+    text-align: center;
+    left: 50%;
+    font-family: "Redwing";
+    padding-top: 30px;
+}
+
+.new-in_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.product-one_image {
+    width: 250px;
+    height: 305px;
+}
+ .product-one_image:hover {
+    width: 270px;
+    height: 325px;
+    transition-duration: 0.6s;
+ }
+
+.reviews {
+    padding: 80px 0px;
+    text-align: center;
+    left: 50%;
+}
+
+.reviews_content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.review_info p {
+    display: inline-block;
+    justify-content: center;
+} 
+
+.quote_image-one {
+    background-image: url("../images/review-image-hipster.jpg");
+    background-size: cover;
+    background-position-x: -80px;
+    width: 300px;
+    height: 350px;
+    color: #113a3a;
+    border-radius: 10px;
+}
+
+.quote_image-two {
+    background-image: url("../images/handsome-man-exercising-park-sports-wear.jpg");
+    background-size: cover;
+    background-position-x: -130px;
+    width: 300px;
+    height: 350px;
+    color: #113a3a;
+    border-radius: 10px;
+}
+
+.quote_image-three {
+    background-image: url("../images/image00001.jpeg");
+    background-size: cover;
+    background-position-x: -80px;
+    position: inherit;
+    width: 300px;
+    height: 350px;
+    color: white;
+    border-radius: 10px;
+}

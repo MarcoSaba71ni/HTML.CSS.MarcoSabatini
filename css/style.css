@@ -1,0 +1,129 @@
+/*Global CSS */
+
+@import "import/variables.css";
+
+@font-face {
+    font-family: "Redwing";
+    src: url("../fonts/Redwing-Light.otf") format("truetype");
+}
+
+h1 ,
+h2 , 
+p {
+    font-family: "Redwing";
+
+}
+header {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    text-size-adjust: 20px;
+    width: 100%;
+}
+header,
+ footer {
+    padding-left: 30px;
+    background-color: #0D6868;
+    color: white;
+}
+
+header a, 
+footer a {
+  color: #fff;
+  padding: 5px;
+  border-color: rgb(228, 183, 183);
+  border-radius: 5px;
+}
+
+.header_icons {
+    display: flex;
+    justify-content: right;
+    padding-left: 60%;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.cta {
+    background-color: #0D6868;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.cta:hover {
+    background: #c4c4c4;
+    color: #0D6868;
+    padding: 12px;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+
+.cta_product-one {
+    background-color: #0D6868;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.cta_product-one:hover {
+    background-color: #c4c4c4;
+    color: #0D6868;
+    padding: 12px;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+
+footer {
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    flex: 1;
+    padding-left: 10%;
+    justify-content: space-evenly;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.image_logo {
+    width: 80px;
+    height: auto;
+    filter: brightness(450%);
+}
+
+.image_logo2 {
+    width: 300px;
+    height: auto;
+    filter: brightness(350%);
+}
+
+.product-one_image {
+    width: 250px;
+    height: 305px;
+}
+
+@media (max-width:700px) {
+    .new-in {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,95 @@
+/*Jackets html Page*/
+@font-face {
+    font-family: "Redwing";
+    src: url("../fonts/Redwing-Light.otf") format("truetype");
+}
+
+.jackets h1 {
+    text-align: center;
+}
+
+.jackets h2 {
+    padding-left: 10%;
+}
+
+.jackets_content-one ,
+.jackets_content-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.jackets_content {
+    display: flex;
+}
+
+.price-buy {
+    justify-content: right;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.cta_product-one {
+    background-color: #0D6868;
+    color: white;
+    text-align: center;
+}
+
+/*Jackets Page*/ 
+
+.jacket_image {
+    width: 350px;
+    height: auto;
+    padding-left: 15px;
+}
+
+.cta_buy-it {
+    background-color: #0D6868;
+    color: #c4c4c4;
+    padding: 10px;
+}
+
+.cta_buy-it:hover {
+    background-color: #c4c4c4;
+    color: #0D6868;
+    padding: 12px;
+}
+
+
+
+/*Jacket One Page */
+
+.h1 {
+    padding-left: 30%;
+}
+
+.product_display-image {
+    width: 400px;
+    height: 450px;
+}
+
+.product_display {
+    display: flex;
+    padding: 50px 0px 50px 30%;
+}
+
+.display_price-buy {
+    padding-top: 70px;
+    padding-left: 20px;
+}
+
+.display_icon {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+i {
+    padding-top: 5px;
+    text-size-adjust: 95%;
+}
+
+
+
+
