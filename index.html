@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,12 +7,15 @@
         <title>Rainy Days | Home</title>
         <link href="css/style.css" rel="stylesheet"/>
         <link href="css/index.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
         <script src="https://kit.fontawesome.com/fb4c08beea.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <a href="index.html"><img src="images/RainyDays_Logo.png" class="image_logo">
-            <nav>
+            <section class="logo-section">
+                <a href="index.html"><img src="images/RainyDays_Logo.png" alt="push-zone-image" class="image_logo">
+            </section>
+            <nav class="nav-links">
                 <a href="index.html" class="active">Home</a>
                 <a href="about-us.html">About Us</a>
                 <a href="contact-us.html">Contact Us</a>
@@ -23,6 +26,19 @@
                 <a href="my-favourite.html"><i class="fa-regular fa-heart"></i></a>
                 <a href="my-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
             </section>
+            <aside class="dropdown-div">
+                <button class="burguer-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="my-profile.html">My Profile</a></li>
+                    <li><a href="my-favourite.html">My Favorite</a></li>
+                    <li><a href="my-cart.html">My Cart</a></li>
+                </ul>
+            </aside>
         </header>
         <main>
             <section class="push-zone">
@@ -82,21 +98,24 @@
             <section>
                 <a href="index.html"><img src="images/RainyDays_Logo.png" class="image_logo2"></a>     
             </section>
-            <section>
-                <a href="instagram">Instagram</a>
-                <i class="fa-brands fa-instagram"></i>
-                <a href="Facebook">Facebook</a>
+            <nav class="footer-links">
+                <a href="instagram"><p>Instagram</p>
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a href="Facebook"><p>Facebook</p></a>
                 <i class="fa-brands fa-square-facebook"></i>
-                <a href="TikTok">TikTok</a>
+                <a href="TikTok"><p>TikTok</p></a>
                 <i class="fa-brands fa-tiktok"></i>
-            </section>
-            <section class="sdffooter_links">
-                <ul>
-                   <a href="index.html"><li><i class="fa-solid fa-house">Home</i></li></a>
-                   <a href="about-us.html"><li><i class="fa-solid fa-address-card">About Us</i></li></a>
-                   <a href="contact-us.html"><li><i class="fa-solid fa-envelope">Contact Us</i></li> </a>
+            </nav>
+            <section>
+                <ul class="sdffooter_links">
+                   <a href="index.html"><li><i class="fa-solid fa-house"><p>Home</p></i></li></a>
+                   <a href="about-us.html"><li><i class="fa-solid fa-address-card"><p>About</p></i></li></a>
+                   <a href="contact-us.html"><li><i class="fa-solid fa-envelope"><p>Contact</p></i></li> </a>
                 </ul> 
             </section> 
         </footer>
+        <script src="js/header.js"></script>
     </body>
 </html>
