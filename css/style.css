@@ -7,6 +7,8 @@
     src: url("../fonts/Redwing-Light.otf") format("truetype");
 }
 
+/*Header */
+
 h1 ,
 h2 , 
 p {
@@ -15,14 +17,35 @@ p {
 }
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
     text-size-adjust: 20px;
     width: 100%;
+    height: 60px;
 }
+
+.logo-section {
+    padding-left: 30px;
+}
+
+.logo-section,
+.header_icons {
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex: 2;
+}
+
+.dropdown-div {
+    display: none;
+}
+
 header,
  footer {
-    padding-left: 30px;
     background-color: #0D6868;
     color: white;
 }
@@ -32,22 +55,28 @@ footer a {
   color: #fff;
   padding: 5px;
   border-color: rgb(228, 183, 183);
-  border-radius: 5px;
 }
 
 .header_icons {
     display: flex;
-    justify-content: right;
-    padding-left: 60%;
     gap: 15px;
 }
 
-a {
-    text-decoration: none;
+
+
+.nav-links a {
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s ease;
 }
 
-.active {
-    text-decoration: underline;
+.nav-links a:hover {
+  border-bottom: 2px solid white;
+}
+
+
+a {
+    text-decoration: none;
 }
 
 .cta {
@@ -121,9 +150,88 @@ footer {
     height: 305px;
 }
 
-@media (max-width:700px) {
+@media (max-width:768px) {
+
+    .nav-links,
+    .header_icons {
+        display: none;
+    }
+
+    .dropdown-div {
+        display: block;
+        position: relative;
+    }
+
+    .burguer-btn {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+  .dropdown-menu {
+        display: none; 
+        flex-direction: column;
+        background-color: #0D6868;
+        position: absolute;
+        top: 40px;
+        right: 10px;
+        width: 160px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 1000;
+         padding: 0;
+        margin: 0;
+    }
+
+  .dropdown-menu li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #fff;
+    }
+
+  .dropdown-menu li:last-child {
+        border-bottom: none;
+    }
+
+  .dropdown-menu a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+  .dropdown-menu a:hover {
+        background-color: #095050;
+    }
+
     .new-in {
         display: flex;
         flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer_links p {
+        display: none;
+    }
+
+    .sdffooter_links {
+        display: none;
+    }
+
+
+    .image_logo2 {
+        width: 150px;
+        height: 100px;
     }
 }
