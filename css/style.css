@@ -12,7 +12,7 @@
 h1 ,
 h2 , 
 p {
-    font-family: "Redwing";
+    font-family: var(--font-family-heading);
 
 }
 header {
@@ -46,7 +46,7 @@ header {
 
 header,
  footer {
-    background-color: #0D6868;
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -80,7 +80,7 @@ a {
 }
 
 .cta {
-    background-color: #0D6868;
+    background-color: var(--primary-color);
     color: #fff;
     text-transform: uppercase;
     border-radius: 5px;
@@ -95,15 +95,15 @@ a {
 }
 
 .cta:hover {
-    background: #c4c4c4;
-    color: #0D6868;
+    background: var(--accent-color);
+    color:  var(--primary-color);
     padding: 12px;
     transition-duration: 0.5s;
     font-weight: bold;
 }
 
 .cta_product-one {
-    background-color: #0D6868;
+    background-color:  var(--primary-color);
     color: whitesmoke;
     padding: 10px;
     border-radius: 5px;
@@ -111,8 +111,8 @@ a {
 }
 
 .cta_product-one:hover {
-    background-color: #c4c4c4;
-    color: #0D6868;
+    background-color: var(--accent-color) ;
+    color: var(--primary-color);
     padding: 12px;
     transition-duration: 0.5s;
     font-weight: bold;
@@ -174,7 +174,7 @@ footer {
   .dropdown-menu {
         display: none; 
         flex-direction: column;
-        background-color: #0D6868;
+        background-color:   var(--primary-color);
         position: absolute;
         top: 40px;
         right: 10px;
@@ -190,7 +190,7 @@ footer {
         list-style: none;
         margin: 0;
         padding: 0;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid var(--light-color);
     }
 
   .dropdown-menu li:last-child {
@@ -199,7 +199,7 @@ footer {
 
   .dropdown-menu a {
         display: block;
-        color: white;
+        color: var(--accent-color);
         text-decoration: none;
         padding: 10px 15px;
         width: 100%;
