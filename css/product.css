@@ -1,4 +1,7 @@
 /*Jackets html Page*/
+
+@import "import/variables.css";
+
 @font-face {
     font-family: "Redwing";
     src: url("../fonts/Redwing-Light.otf") format("truetype");
@@ -31,8 +34,8 @@
 }
 
 .cta_product-one {
-    background-color: #0D6868;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     text-align: center;
 }
 
@@ -45,14 +48,14 @@
 }
 
 .cta_buy-it {
-    background-color: #0D6868;
+    background-color: var(--primary-color);
     color: #c4c4c4;
     padding: 10px;
 }
 
 .cta_buy-it:hover {
-    background-color: #c4c4c4;
-    color: #0D6868;
+    background-color:var(--accent-color);
+    color: var(--primary-color);
     padding: 12px;
 }
 
