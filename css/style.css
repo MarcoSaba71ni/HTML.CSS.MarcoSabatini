@@ -221,8 +221,9 @@ footer {
         justify-content: center;
     }
 
-    .footer_links p {
-        display: none;
+    .footer_links {
+        display: flex;
+        flex-direction: row;
     }
 
     .sdffooter_links {
