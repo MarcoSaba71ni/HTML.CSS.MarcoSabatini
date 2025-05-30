@@ -1,8 +1,9 @@
 @import "import/variables.css";
 
 .contact_content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 input,
@@ -42,4 +43,28 @@ textarea {
 .post {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .contact_form {
+    margin-top: 10px;
+  }
+
+  .contact_content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .name-email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-input {
+    width: 70% ;
+  }
+
+  .forms {
+    padding-left: 10%;
+  }
 }
