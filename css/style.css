@@ -97,7 +97,6 @@ a {
 .cta:hover {
     background: var(--accent-color);
     color:  var(--primary-color);
-    padding: 12px;
     transition-duration: 0.5s;
     font-weight: bold;
 }
